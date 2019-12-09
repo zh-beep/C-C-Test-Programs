@@ -15,11 +15,11 @@ int main()
 {
     int* p;
     p = 10;
-    printf("%d \n",p);
+    printf("%d \n",p*);
     
     int* d;
     d = 10;
-    printf("%d \n",*d);
+    printf("%p \n",d);
     
 /*    printf("The two numbers are %d and %d\n",2,3);
     int a = 2;
