@@ -22,14 +22,21 @@ void dostuff(int* L){
 
 int main()
 {
-    //printf("The two numbers are %d and %d\n",2,3);
-    int a = 2;
+    int a = 4;
+    int *b = &a;
+    //*b = 10;
+    //printf("hey");
+    printf("%d",*b);
+	//printf("The two numbers are %d and %d\n",2,3);
+    //int a = 2;
     //int b = 3;
-    int *p = malloc(sizeof(int));
+    //int *p = malloc(sizeof(int));
+    /*
     *p = 10;
-    dostuff(p);
+	dostuff(p);
     dostuff(&a);
-    //swap(&a,&b);
+    */
+	//swap(&a,&b);
     //printf("Hello world! - this is Zanir\n");
     return 0;
 }
