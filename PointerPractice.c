@@ -29,7 +29,7 @@ int main()
     int a = 4;
     int *b = malloc(sizeof(int));
     *b = 10;
-    printf("val = %d,ptr = %p\n",*b,(void *) b);
+    printf("1val = %d,ptr = %p\n",*b,(void *) b);
     free(b);
     printf("val = %d,ptr = %p\n",*b,(void *) b);
     */
