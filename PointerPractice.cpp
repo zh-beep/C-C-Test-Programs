@@ -1,35 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <iostream>
+using namespace std;
 
-void swap(int* px, int* py){
-	int temp; 
-	temp = *px;
-        printf("temp: %d, *px: %d\n",temp,*px);
-	*px = *py;
-        printf("*px: %d, *py: %d\n",*px,*py);
-	*py = temp;
-        printf("*px: %d, *py: %d\n",*px,*py) ;
-}
-
-
-void dostuff(int* L){
-     printf("%d multiplied by 7 is:",*L);
-     *L = *L * 7;
-     printf("%d \n",*L);
-
-}
 
 
 int main()
 {
-    int a = 4;
-    int *b = malloc(sizeof(int));
-    *b = 10;
-    printf("val = %d,ptr = %p\n",*b,b);
-    free(b);
-    //printf("val = %d,ptr = %p\n",*b,(void *) b);
-    
-
+    int* a =(int*) malloc(sizeof(int));
+    *a = 10;
+    cout << "*a = " <<*a << " address of a is:" << a << endl;
+    cout<< "*a++ = " << (*a)+1 << " a++:" << a+1 << endl;
+    free(a);
     return 0;
 }
 
