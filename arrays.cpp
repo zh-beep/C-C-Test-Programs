@@ -5,8 +5,9 @@ int main()
 {
     //Allocating a 2D Array: 
     //1. By allocating an array of pointers
-    int *arr[r];
-    
+    // int *arr[r];
+    int* arr = malloc(10*sizeof(int));
+    /*
     int a[3][2] = { {0,0}, {1,1}, {2,2}};
     //3 rows, 2 columns
     for ( int i = 0; i < 3; i++)
@@ -18,6 +19,6 @@ int main()
         }
     }
 
-
+    */
 
 }	
