@@ -1,11 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <iostream>
+using namespace std;
+
 
 struct node
 {
     int value;
     node* next; 
 };
+
+void traverseList(node* point)
+{
+	while (point!= NULL)
+	{
+		cout << point->value << endl;
+		point = point->next;
+	}
+
+}
 
 
 int main()
@@ -28,5 +41,7 @@ int main()
     first->next = second;
     second->next = third;
     third->next = NULL;
+
+    traverseList(first);
 }
 
