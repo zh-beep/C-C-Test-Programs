@@ -7,6 +7,7 @@ bool hashTable(int* point, int* value){
 
 
 	//make hashtable
+	cout << value << endl;
 	int index = *value % 10; //assume you know the max, should add as argument
 	//check if it already exists in the hashmap
 	if (*(point + index) == *value) {
