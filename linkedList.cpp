@@ -10,6 +10,29 @@ struct node
     node* next; 
 };
 
+struct node * reverseList(node* point)
+{
+	//the first thing that's passed in is the head of 
+	//the linked list	
+	struct node* temp = NULL;
+	temp = (struct node *) malloc(sizeof(struct node));	
+	struct node* prev= NULL;
+	prev = (struct node *) malloc(sizeof(struct node));	
+	while (point !=NULL){
+	cout<<point->value<<endl;	
+	temp = curr.next;
+	point->next = prev;
+	
+
+	}	
+
+	free(temp);
+	free(prev);
+	return point;
+		
+}
+
+
 void traverseList(node* point)
 {
 	while (point!= NULL)
@@ -27,6 +50,7 @@ int main()
     struct node* first = NULL;
     struct node* second = NULL;
     struct node* third = NULL;
+
 	
     
     
@@ -42,6 +66,11 @@ int main()
     second->next = third;
     third->next = NULL;
 
-    traverseList(first);
+    //traverseList(first);
+    reverseList(first);
+
+    free(first);
+    free(second);
+    free(third);
 }
 
