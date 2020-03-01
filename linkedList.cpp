@@ -34,18 +34,20 @@ struct node * reverseList(node* point)
 	prev = (struct node *) malloc(sizeof(struct node));	
 	temp->next= NULL; 
 	temp->value = 1;
+	traverseList(point);
+	cout << "first one" << endl;
 
-	while (point !=NULL){
-	cout << point->value << endl;
+	while (point !=NULL&& point->next != NULL){
+	//cout << point->value << endl;
 	temp=point->next;	
 	point->next=prev;	
 	prev=point;
 	point=temp;
-	cout << point->value << endl;
+	//cout << point->value << endl;
 	
 
 	}	
-	traverseList(point);	
+	traverseList(prev);	
 	free(temp);
 	free(prev);
 	
