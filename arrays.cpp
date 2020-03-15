@@ -3,22 +3,18 @@ using namespace std;
 
 int main()
 {
-    //Allocating a 2D Array: 
-    //1. By allocating an array of pointers
-    // int *arr[r];
-    int* arr = malloc(10*sizeof(int));
-    /*
-    int a[3][2] = { {0,0}, {1,1}, {2,2}};
-    //3 rows, 2 columns
-    for ( int i = 0; i < 3; i++)
-    {
-        for( int j = 0; j < 2; j++)
-	{
-        cout << "a[" << i << "] b[" <<  j << "]:" << a[i][j] << endl;
+	//Allocating a 2D Array: 
+        //1. By allocating an array of pointers
+    	// int *arr[r];
+	int* arr;
+        arr= (int*) malloc(10*sizeof(int));
+	arr[0] = 1;
+	arr[1] = 2;	
+	for (int i = 0; i < 10; i++){
+		
+		cout << *(arr + i) << endl;
+	
 
-        }
-    }
-
-    */
-
+		
+	}
 }	
