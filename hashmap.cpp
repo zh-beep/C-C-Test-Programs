@@ -57,11 +57,22 @@ int main()
 	hash_map(19,hash_array);
 	hash_map(3,hash_array);
 
-	//hash_map(0,hash_array);
+	//hash_array(0,hash_array);
 	//hash_array.insert(pair<int,int>(100,1));
 	//cout << hash_array[100] << endl;
 
-	
+
+	map<int,int>::iterator it = hash_array.begin();
+	while (it != hash_array.end())
+	{
+
+		cout << "Key: " << it->first << "Hash value:" << it->second <<  endl;
+		it++;
+	}
+
+
+
+	/*	
 	vector<int>::iterator it;// = vect.begin;
 	for(it = vect.begin();it < vect.end(); it++)
 	{
@@ -69,12 +80,11 @@ int main()
 		cout<<*it << endl;
 
 	}
-	/*
 	for (int x : vect)
 	{
 		
 		
-		hash_map(x,hash_array);
+		hash_array(x,hash_array);
 
 	}*/
 
