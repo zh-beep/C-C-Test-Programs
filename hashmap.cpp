@@ -33,8 +33,8 @@ void hash_map(int hashNum, map<int,int> &temp_map )
 	}
 	*/
 
-	temp_map.insert(pair<int,int>(hashNum,20));
-	cout << temp_map[hashNum] << endl;
+	temp_map.insert(pair<int,int>(hashNum,1));
+	//cout << temp_map[hashNum] << endl;
 
 	
 
@@ -55,21 +55,21 @@ int main()
 	vect.push_back(4);
 	vect.push_back(4);
 	hash_map(19,hash_array);
+	hash_map(3,hash_array);
 
 	//hash_map(0,hash_array);
 	//hash_array.insert(pair<int,int>(100,1));
 	//cout << hash_array[100] << endl;
 
 	
-	/*
-	std:;vector<int>:;iterator it = vect.begin;
+	vector<int>::iterator it;// = vect.begin;
 	for(it = vect.begin();it < vect.end(); it++)
 	{
 
-		hash_map(x,hash_
+		cout<<*it << endl;
 
-	}*/
-	/*	
+	}
+	/*
 	for (int x : vect)
 	{
 		
@@ -78,7 +78,7 @@ int main()
 
 	}*/
 
-	cout << hash_array[19] << endl;
+	//cout << hash_array[19] << endl;
 	return 0;
 	
 
