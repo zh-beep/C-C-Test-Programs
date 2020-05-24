@@ -6,20 +6,29 @@
 #include <iterator>
 using namespace std;
 
+
+
+
 int main()
 {
 
 
-        map<int,int> mp;
-	//mp.insert(pair<int, int>(100,10));
-	mp.insert(pair<int, int>(160, 42));
-	map<int,int>::iterator itr;
-	for (itr = mp.begin(); itr != mp.end(); ++itr){
-		cout<< itr->first << " " <<  itr->second << endl;
+        
+	std::map<int,int> ii;
+	ii.insert(std::pair<int,int>(1,1));
+	ii.insert(std::pair<int,int>(2,1));
+	ii.insert(std::pair<int,int>(3,1));
+	std::map<int,int>::iterator it = ii.begin();
+	while(it != ii.end())
+	{
 
+		cout << it->first <<  endl;
+		cout << it->second <<  endl;
+		it++;
 	}
 
-    
+	
+ 
 	return 0;
 	
 
