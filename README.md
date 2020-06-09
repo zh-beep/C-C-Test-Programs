@@ -6,3 +6,6 @@ Use this command to compile C Progreams: gcc -std=c99 -Wall -Wextra -pedantic -o
 Use this command to compile C++ Programs: gcc -std=c++11 -Wall -Wextra -pedantic -o a.out <filename>
 
 To run the executable: ./a.out
+
+String.cpp: 
+Compare function: https://www.geeksforgeeks.org/comparing-two-strings-cpp/
