@@ -5,12 +5,11 @@
 using namespace std;
 
 
-
 int main()
 {
 
 
-	//map
+	global map<int,int> wow;//map
 	vector<int> myints;
 	myints.push_back(3);
 	myints.push_back(3);
