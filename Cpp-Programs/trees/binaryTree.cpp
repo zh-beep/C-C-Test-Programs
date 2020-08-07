@@ -1,13 +1,21 @@
-struct node{
-	int key_value;
-	node* right;
-	node* left;
+#include <iostream>
+using namespace std;
+
+struct Node{
+
+	int key; 
+	Node *left,*right;
 };
+
+//bfs
+//dfs
+
+
+
 
 int main(){
 
-	node b;
-	b.key_value = 2;
+	return 1; 
 
 }
 

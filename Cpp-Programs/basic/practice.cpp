@@ -9,6 +9,7 @@ int main()
 {
 
 
+	/*
 	global map<int,int> wow;//map
 	vector<int> myints;
 	myints.push_back(3);
@@ -21,6 +22,13 @@ int main()
 		cout<<myints[i];
 	
 	
+	}
+	*/
+	int count = 1;
+	while(count < 10){
+	cout << count << endl;
+	count++;
+
 	}
 
 	return 0;
